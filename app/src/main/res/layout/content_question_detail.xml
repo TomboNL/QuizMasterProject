@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/edit_question"
+        android:id="@+id/edit_question_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -18,12 +18,38 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/edit_answer"
+        android:id="@+id/edit_answer_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_answer"
         android:inputType="textMultiLine"
+        android:minLines="6"
+        android:padding="@dimen/small_padding"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:layout_marginTop="@dimen/big_padding"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_points_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_points"
+        android:inputType="number"
+        android:minLines="6"
+        android:padding="@dimen/small_padding"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:layout_marginTop="@dimen/big_padding"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_difficulty_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_difficulty"
+        android:inputType="number"
         android:minLines="6"
         android:padding="@dimen/small_padding"
         android:layout_marginBottom="@dimen/big_padding"
