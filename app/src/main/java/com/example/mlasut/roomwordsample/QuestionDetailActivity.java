@@ -44,10 +44,10 @@ public class QuestionDetailActivity extends AppCompatActivity {
             }
         });
 
-        textQuestion = (EditText) findViewById(R.id.edit_question);
-        textAnswer = (EditText) findViewById(R.id.edit_answer);
-        textPoints = (EditText) findViewById(R.id.edit_points);
-        textDifficulty = (EditText) findViewById(R.id.edit_difficulty);
+        textQuestion = (EditText) findViewById(R.id.edit_question_detail);
+        textAnswer = (EditText) findViewById(R.id.edit_answer_detail);
+        textPoints = (EditText) findViewById(R.id.edit_points_detail);
+        textDifficulty = (EditText) findViewById(R.id.edit_difficulty_detail);
 
         Intent intent = getIntent();
         mId = intent.getIntExtra(MainActivity.EXTRA_REPLY_ID, 0);
@@ -61,7 +61,7 @@ public class QuestionDetailActivity extends AppCompatActivity {
                 // Update the cached copy of the questions in the adapter.
                 textQuestion.setText(questions.get(mId-1).getQuestion());
                 textAnswer.setText(questions.get(mId-1).getAnswer());
-                textPoints.setText(questions.get(mId-1).getPoints());
+                textPoints.setText(String.valueOf(questions.get(mId-1).getPoints()));
                 textDifficulty.setText(String.valueOf(questions.get(mId-1).getDifficulty()));
             }
         });
