@@ -5,7 +5,7 @@
     <string name="hint_answer">Answer...</string>
     <string name="hint_points">Points...</string>
     <string name="hint_difficulty">Difficulty...</string>
-    <string name="button_save">Save</string>
-    <string name="empty_not_saved">Question not saved because it is empty.</string>
+    <string name="button_save">Save...</string>
+    <string name="empty_not_saved">Question not saved because it is empty...</string>
     <string name="title_activity_question_detail">QuestionDetailActivity</string>
 </resources>
